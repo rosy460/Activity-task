@@ -1,0 +1,30 @@
+car ={'brand':'toyota', 'model':'corolla', 'year':'2020', 'color':'white' }
+# 1. pop()
+car.pop("model")
+print("After removing 'model':", car)
+
+# 2. len()
+print("number of items in car dictionary:", len(car))
+
+# 3. del()
+del car["color"]
+print("after deleting color:", car)
+
+#4. items()
+print("key-value pairs:", list(car.items()) )
+
+#5. get()
+print("car model:", car.get("model"))
+
+#6. values()
+print("all values:", list(car.values()))
+
+#7. loop through values()
+print("values:")
+for v in car.values():
+    print(v)
+
+#8. loop through keys()
+print("keys:")
+for k in car:
+    print(k)
